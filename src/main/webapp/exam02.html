@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src = "js/jquery-3.7.1.js"></script>
+<script type="text/javascript">
+	// jQuery() 함수에 의해서 함수가 호출되어지면,
+	// 호출된 함수의 매개변수에는 $객체가 전달된다.
+	// $객체 : jquery의 모든 기능을 가지고 있는 객체
+	function hello($) {
+		var h1 = $("#hello"); 		// 아이디가 "hello" 태그 얻어오기
+		h1.html("Hello jQuery!!");  // 아이디가 "hello" 태그에 값 출력하기
+		//var h1 = document.getElementById("hello");
+		//h1.innerHTML = "Hello jQuery!!"
+	}
+	
+	jQuery(hello);
+	
+</script>
+</head>
+<body>
+	<h1 id="hello"></h1>
+</body>
+</html>

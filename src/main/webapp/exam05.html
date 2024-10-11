@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#title").html("두번쨰 제목");
+		$("#container > #title").html("제목입니다.");
+		$("#container div.box").html("안녕하세요.");
+		$("ul > li").html("목록입니다.");
+		$("ul > li:eq(1)").html("jQuery 고유의 방식도 있습니다.");
+		// 여러개를 한꺼번에 선택
+		$("p, pre").html("다중요소 선택");
+		// 속성으로 선택
+		$("pre[name='source']").html("name 속성으로 선택");
+		// li 태그의 첫번째와 마지막 태그 선택
+		$("ul > li:first-child").html("First-Child");
+		$("ul > li:last-child").html("Larst-Child");
+	});
+</script>
+</head>
+<body>
+	<div id="container">
+		<h3 id="title"></h3>
+		<div class="box"></div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<p></p>
+		<pre></pre>
+		<pre name="source"></pre>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src = "js/jquery-3.7.1.js"></script>
+<script type="text/javascript">
+	function hello() {
+		var h1 = document.getElementById("hello");
+		h1.innerHTML = "Hello jQuery!!"
+	}
+	//jQuery(함수명) : 브라우저가 모든 태그를 인식하면 호출되는 함수
+	jQuery(hello);
+	
+/*	// window.onload : 브라우저가 모든 태그를 인식하면 동작되는 이벤트 속성
+	window.onload = function(){
+		hello();	
+	}*/
+	
+</script>
+</head>
+<body>
+	<h1 id="hello"></h1>
+</body>
+</html>
